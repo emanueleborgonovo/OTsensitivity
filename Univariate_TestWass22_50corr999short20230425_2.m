@@ -40,7 +40,7 @@ I=[1 dint+1 2*dint+1];
 
 xall=zeros(ns(end),length(I));
 yall=zeros(ns(end),1);
-if(~isempty(gcp('nocreate'))), parpool('threads'); end
+if(isempty(gcp('nocreate'))), parpool('threads'); end
 parfor i=1:ns(end)
     %j=min(100,ns(end)-i+1);
     x0=mu+randn(1,dim)*Z;

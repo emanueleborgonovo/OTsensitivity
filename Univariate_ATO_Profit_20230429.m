@@ -1,8 +1,8 @@
-%% Incresing Sample Sizes 0.50 Corr
+%% Increasing Sample Sizes 0.50 Corr
 close all
 %clear all
 clc
-load('ATOdataInvyProfitTime2.mat')
+load('ATOxy_FinalProfit.mat') %'ATOdataInvyProfitTime2.mat' - file too large to be on Github
 tic
 ns=length(y);% 500000 700000];% 50000 100000 500000];% 1000 10000 20000 50000 100000 500000];% 1000 10000 20000 100000 500000];%
 %m=[2 4 5 6 8 10 15 20 40 50];
