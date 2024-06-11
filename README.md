@@ -35,18 +35,19 @@ A list containing for each specified solver ‘type’ the separations Wtype (us
 
 ***********************
 Please make sure that the following list of auxiliary solvers is available on github, if we want to offer full support:
-transsimp2
-sinkfastCost
-wasserstein_swap
-hungarian
-habr
-ungarisch
-bwsi
-wassgrad2
-sinkhorn4
-lapmack
-revsimplex
-sinkfast
+transsimp2.m
+sinkfastCost.m
+wasserstein_swap.m
+hungarian.m
+habr.m
+ungarisch.m
+bwsi.m
+wassgrad2.m
+sinkhorn4.m
+lapmack.m
+revsimplex.m
+sinkfast.m
+bicount.m
 *********************
 “bigwassersteintestEpsilon.m” and “bigwassersteintestEpsilon2.m” are the same as bigwassersteintest.m. They just differ because alternative values for the penalty in the Sinkhorn function have been used, in order to test the sensitivity of results to this parameter, as per the last paragraph of Section 5.
 
