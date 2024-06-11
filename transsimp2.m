@@ -6,7 +6,7 @@ function [Popt,fopt]=transsimp2(a,b,C)
 % next try with tree structure
 [n,m]=size(C); % cmax=max(C(:));
 verbose= false; % true; % 
-initfeas='Vogel';  % 'Vogel'; % 'NW'; % 
+initfeas='NW2';  % 'Vogel'; % 'NW'; % 
 assert(size(a,1)==n && size(b,1)==m,'mass and cost matrix dimension mismatch')
 %assert(abs(sum(a)-sum(b))<max(n,m)*eps(cmax), 'No feasible solution for the transport problem.');
 
@@ -207,7 +207,6 @@ while (true)
 %% Step 3. Select a nonbasic variable corresponding to a negative cost coefficient to
 % enter the basis (usually the one corresponding to the most negative cost coefficient).
   [cr,ij]=min(R(:)); % flatten for speed
-  cr
 % If all relative cost coefficients are nonnegative, stop; the solution is optimal. 
   if(cr>-10*eps), break; end
   % selected variable index (don't use i,j as iterators, though)
