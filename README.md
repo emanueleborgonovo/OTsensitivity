@@ -5,7 +5,7 @@ This is a collection of Matlab subroutines accompanying the work: "Probabilistic
 
 1.	Overview
 
-The folder contains 34 files. Of these, 31 files are MATLAB scripts (.m), two are .mat files and one is an Excel file used to produce Figure 7 postprocessing the output of one of the MATLAB scripts. 
+The folder contains 36 files. Of these, 33 files are MATLAB scripts (.m), two are .mat files and one is an Excel file used to produce Figure 7 postprocessing the output of one of the MATLAB scripts. 
 
 2.	Codes
 
@@ -69,6 +69,7 @@ wassersi.m
 bwsi.m
 
 All these solvers are original implementations by the authors.
+In addition, the subroutine sobolpoints.m is a quasirandom Monte Carlo generator. The subroutine deltamim.m is a fast implementation to compute the so-called \delta-importance measure of Borgonovo (2007).
 
 3.	Reproduction of Figures
 In order to run the subroutines, please follow these steps:
